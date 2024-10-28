@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.3rem;
+    background-color: rgb(28, 81, 50);
+}
+
+.navbar .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.button-search{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.button-search, .search-input{
+    border-radius: 8px;
+    padding: 0.4rem 1.5rem;
+}
+
+#obj-width{
+    padding: 0px 5rem;  
+    width: 100%;  
+}
+
+.cards-container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    padding: 3rem 0;
+    max-width: 1200px;
+    height: 100%;
+    background-color: rgb(202, 222, 211);
+}
+
+.blog-cards{    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+    border: 2px solid rgb(42, 78, 42);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 1rem;
+    margin: 10px;
+    color: #141414;
+    /* overflow: hidden; */
+    cursor: pointer;
+}
+
+.blog-cards:hover {
+    box-shadow: 4px 4px 10px rgb(0, 0, 0, 0.3);
+}
+/* img{
+    width: 100%;
+} */
+.blog-cards img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-cards h3{
+   
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.blog-cards p {
+    font-size: 1.2rem;
+    
+}
+
+@media(max-width: 768px) {
+
+    .cards-container{
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 426px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* height: 100%; */
+    }
+
+    .navbar .logo{
+        font-size: 2rem;
+    }
+    .search-input{
+        width: 150px;
+    }
+    #obj-width{
+        padding: 10px 10px ;
+    }
+    .blog-card{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
